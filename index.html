@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+       <section class="lecture-1">
+        <h2>Javascript</h2>
+        <div class="row">
+            <div class="col-1">
+                <h1>lecture</h1>
+                <p>Functions Calling Other Functions</p>
+            </div>
+            <div class="col-2">
+            
+              <p>  function multi(x){<br>
+                    const multiply = x * 2<br>
+                    return multiply;<br>
+                    }
+                </p>
+                <br>
+                  <p> function fruitProcessor(blue, red){<br>
+                        const blueProcess = multi(blue);<br>
+                        const redProcess = multi(red)<br>
+                        return `the apple is ${blueProcess} <br>
+                        and oranges is ${red}`<br>
+                    }
+                </p>
+                <br>
+                    const output = fruitProcessor(22,10);<br>
+                    console.log(output)<br>
+                    <br>
+                    <h1 class="answer">Output: <span class="h1">The apple is 44 and oranges is 20</span>  </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1>lecture</h1>
+                <p>Introduction array</p>
+            </div>
+            <div class="col-2">
+                    <p>1. const friend = ['Bruce', 'Bea', 'Phil'];<br>
+                        console.log(friend);<br>
+                        console.log(friend[friend.length - 1])</p>
+                        <br>
+                        <p>2. const years  = new Array(1990, 1991, 1989);
+                            <br> console.log(years)</p>
+
+                        <br>
+                        <br>
+                        <p>
+                            const yearss = [1990, 1992, 2000];<br>
+
+const answ1 =  ageCal(yearss[0])<br>
+const answ2 =  ageCal(yearss[1])<br>
+const answ3 =  ageCal(yearss[yearss.length - 1])<br>
+const answer  = [answ1, answ2, answ3]<br>
+console.log(answer);<br>
+                        </p>
+                    <h1 class="answer">Output: <span class="h1">Ans 1. (3) ['Bruce', 'Bea', 'Phil']</span>
+                      &nbsp; <span class="h1">Ans 2. (3) [1990, 1991, 1989]</span>  </h1>
+            </div>
+        </div>
+
+       </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
