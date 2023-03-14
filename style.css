@@ -17,10 +17,17 @@ body{
 }
 
 main{
-    background: rgb(25, 3, 61);
+    background: rgb(1, 84, 139);
     width: 100%;
 }
-
+h1{
+    font-size: 2rem;
+    font-weight: 100;
+}
+.title-js{
+    text-decoration: underline 5px solid rgb(238, 255, 0);
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
 .lecture-1{
     padding: 5em;
     font-size: 2rem;
@@ -55,10 +62,7 @@ main{
     background: black;
     padding: .5em;
     border-radius: 5px;
-}
-.h1{
-    font-weight: 100;
-    font-size: 2rem;
+    border: 1px solid greenyellow;
 }
 
 @media only screen and (max-width: 700px) {
