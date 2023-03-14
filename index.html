@@ -149,13 +149,58 @@ console.log(answer);<br>
         <div class="row">
             <div class="col-1">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction While Loop</p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p>1. let exercise = ['shoulder', 'bicep','tricep','back']<br>
+                        while(exercise.length){<br>
+                            console.log(exercise); <br>
+                            exercise++<br>
+                        }<br>
+                        
+                        2. let dice = Math.trunc(Math.random() * 6) + 1;<br>
+                        while(dice !== 6){<br>
+                            console.log(`dice --> ${dice}`);<br>
+                            dice = Math.trunc(Math.random() * 6) + 1;<br>
+                            if(dice === 6) console.log('end of loop');<br>
+                        }<br>
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                    <h1 class="answer">Output: <span class="h1">1. ['shoulder', 'bicep', 'tricep', 'back']</span>
+                      &nbsp; <span class="h1">2. dice --> 1 <br> end of loop</span>  </h1>
+                      <br> <br>   
+                      <p>Another Example While Loop</p>
+                      <p>
+                        const calcTip = (bills) => {<br> 
+                            return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;<br> 
+                        }<br> 
+                        <br> 
+                        let bills = [22, 295, 176, 440, 37, 105, 10,1100,86,52]<br> 
+                        const tips = []<br> 
+                        let totals = []<br> 
+                        for(let i = 0; i < bills.length; i++){<br> 
+                            const tip = calcTip(bills[i]);<br> 
+                            tips.push(tip);<br> 
+                            totals.push(tip + bills[i]);<br> 
+                        }<br> 
+                        
+                        console.log(tips, totals);<br> 
+                      </p>
+                      <h1 class="answer">Output: <span class="h1">tips: [4.4, 44.25, 26.4, 88, 7.4, 15.75, 2, 220, 12.9, 7.8] <br>
+                    totals: [26.4, 339.25, 202.4, 528, 44.4, 120.75, 12, 1320, 98.9, 59.8]</span></h1>
+                    <br> <br>   
+                    <p>Another Last While Loop</p>
+                    <p>
+                        const calcAverage = (arr) => {<br>
+                            let sum = 0;<br>
+                            for(let i = 0; i < arr.length; i++){<br>
+                                sum += arr[i]<br>
+                            }<br>
+                            console.log(sum);<br>
+                        }<br>
+                        <br>
+                        calcAverage([5,5])<br>
+                    </p>
+                    <h1 class="answer">Output: <span class="h1">10</span>
             </div>
         </div>
 
