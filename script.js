@@ -27,17 +27,17 @@
 //     mike
 // );
 
-// const ageCal = (x) => {
-//     return 2023 - x;
-// }
+const ageCal = (x) => {
+    return 2023 - x;
+}
 
-// const yearss = [1990, 1992, 2000];
+const yearss = [1990, 1992, 2000];
 
-// const answ1 =  ageCal(yearss[0])
-// const answ2 =  ageCal(yearss[1])
-// const answ3 =  ageCal(yearss[yearss.length - 1])
-// const answer  = [answ1, answ2, answ3]
-// console.log(answer);
+const answ1 =  ageCal(yearss[0])
+const answ2 =  ageCal(yearss[1])
+const answ3 =  ageCal(yearss[yearss.length - 1])
+const answer  = [answ1, answ2, answ3]
+console.log(answer);
 
 // const person = {
 //     fname:'Milo',
