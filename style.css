@@ -26,6 +26,7 @@ h1{
 }
 .title-js{
     text-decoration: underline 5px solid rgb(238, 255, 0);
+    -webkit-text-decoration: underline 5px solid rgb(238, 255, 0);
     font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
 .lecture-1{
