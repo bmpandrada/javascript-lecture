@@ -142,4 +142,4 @@ const calcAverage = (arr) => {
     console.log(sum);
 }
 
-calcAverage([5,5])
+calcAverage(totals)
