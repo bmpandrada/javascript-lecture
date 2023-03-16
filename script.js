@@ -120,32 +120,32 @@
 // }
 
 
-const calcTip = (bills) => {
-    return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
-}
+// const calcTip = (bills) => {
+//     return bills >= 50 && bills <= 300 ? bills * 0.15 : bills * 0.2;
+// }
 
-let bills = [22, 295, 176, 440, 37, 105, 10,1100,86,52]
-const tips = []
-let totals = []
-for(let i = 0; i < bills.length; i++){
-    const tip = calcTip(bills[i]);
-    tips.push(tip);
-    totals.push(tip + bills[i]);
-}
+// let bills = [22, 295, 176, 440, 37, 105, 10,1100,86,52]
+// const tips = []
+// let totals = []
+// for(let i = 0; i < bills.length; i++){
+//     const tip = calcTip(bills[i]);
+//     tips.push(tip);
+//     totals.push(tip + bills[i]);
+// }
 
-console.log(tips, totals);
-const calcAverage = (arr) => {
-    let sum = 0;
-    for(let i = 0; i < arr.length; i++){
-        sum += arr[i]
-    }
-    console.log(sum);
-}
+// console.log(tips, totals);
+// const calcAverage = (arr) => {
+//     let sum = 0;
+//     for(let i = 0; i < arr.length; i++){
+//         sum += arr[i]
+//     }
+//     console.log(sum);
+// }
 
-calcAverage(totals);
+// calcAverage(totals);
 
 
-const bruceArray = ['Phil','Salvador',2023 - 1990,'Web Dev',['Saki','Phil', 'Chy', 'kath', 'bruce', true]];
+// const bruceArray = ['Phil','Salvador',2023 - 1990,'Web Dev',['Saki','Phil', 'Chy', 'kath', 'bruce', true]];
 // console.log(bruceArray);
 
 // const bruceObject = {
@@ -233,12 +233,30 @@ const bruceArray = ['Phil','Salvador',2023 - 1990,'Web Dev',['Saki','Phil', 'Chy
 
 
 //array start
-const sample = 'step'
-const type = [];
+// const sample = 'step'
+// const type = [];
 
-for(let i = 0; i <= bruceArray.length; i++){
-    console.log(bruceArray[i], typeof bruceArray[i]);
-    // console.log(`${sample} ${i}`);
-    type[i] = typeof bruceArray[i]
+// for(let i = 0; i <= bruceArray.length; i++){
+//     console.log(bruceArray[i], typeof bruceArray[i]);
+//     // console.log(`${sample} ${i}`);
+//     type[i] = typeof bruceArray[i]
+// }
+// console.log(type);
+
+const temp = [3,-2,-6-1, 'error', 9, 13, 17, 15, 14, 9, 5];
+
+
+const calTemp = (temps) => {
+    let x = temps[0]
+    let n = temps[0]
+    for(let i = 0; i < temps.length; i++){
+        const curTemp = temps[i]
+
+        if(curTemp > x) x = curTemp;
+        if(curTemp < n) n = curTemp;
+    } 
+    console.log(x, n);   
 }
-console.log(type);
+
+
+calTemp([3, 7, 4, 1, 8])

@@ -207,12 +207,27 @@ console.log(answer);<br>
         <div class="row">
             <div class="col-1">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction Function + Array</p>
             </div>
             <div class="col-2">
-                    <p>
-                        </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
+                    <p>const isSaving = [3,-2,-6-1, 'error', 9, 13, 17, 15, 14, 9, 5];<br><br>
+
+                        const calTemp = (isSaving) => {<br>
+                            let max = isSaving[0]<br>
+                            let min = isSaving[0]<br>
+                            for(let i = 0; i < isSaving.length; i++){<br>
+                                const setSaving = isSaving[i]<br><br>
+                        
+                                if(setSaving > max) max = setSaving;<br>
+                                if(setSaving < min) min = setSaving;<br>
+                            } <br>
+                            console.log(max, min);   <br>
+                        }<br><br>
+                        
+                        
+                        calTemp([3, 7, 4, 1, 8])<br>
+                        </p><br>
+                    <h1 class="answer">Output: <span class="h1">8 1</span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
         </div>
