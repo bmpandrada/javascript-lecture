@@ -142,4 +142,103 @@ const calcAverage = (arr) => {
     console.log(sum);
 }
 
-calcAverage(totals)
+calcAverage(totals);
+
+
+const bruceArray = ['Phil','Salvador',2023 - 1990,'Web Dev',['Saki','Phil', 'Chy', 'kath', 'bruce', true]];
+// console.log(bruceArray);
+
+// const bruceObject = {
+//     firstName: 'Phil',
+//     lname: 'Salvador',
+//     age: 2023 - 1990,
+//     work:'Web dev',
+//     friends:['Saki','Phil', 'Chy', 'kath', 'bruce']}
+// //adding object
+// bruceObject['facebook'] = 'bamp@gmail.com';
+// //itenary operator
+// const {firstName,lname, age, work, friends } = bruceObject
+// console.log(`${firstName} and has ${friends.length} and her bestfriend ${friends[friends.length -1]}
+// with the gags ${friends} and work as ${work} now he is ${age} years old`);
+// const names = prompt()
+// bruceObject[names] ? console.log(bruceObject[names]) : console.log('notexist');
+
+
+//start
+// const bruceObject = {
+//     firstName: 'Phil',
+//     lname: 'Salvador',
+//     age: 1990,
+//     work:'Web dev',
+//     friends:['Saki','Phil', 'Chy', 'kath', 'bruce'],
+//     hasDriverLicense : true,
+//     calAge:function(){
+//        this.bday = 2023 - this.age //'this' use inside only of object
+//         return this.bday; 
+//     }
+// }
+
+// bruceObject.friends.push('vits')
+// bruceObject.calAge();
+// console.log(bruceObject.bday);
+
+// function summary(x){
+//     const {firstName,lname, age, hasDriverLicense, friends} = x;
+//     return `${firstName} ${lname} is ${x.calAge(age)} years old and her ${friends}
+//      ${!hasDriverLicense ? 'professional' : 'not a professional driver'}`;
+// }
+
+//  const files = summary(bruceObject);
+// console.log(files);
+
+// const textElement = document.querySelector('.text');
+// textElement.innerHTML = files;
+//end
+
+
+//start of object
+// const mark = {
+//     fullName : 'Mark Miller',
+//     mass:78,
+//     height:1.69,
+//     calcBMI: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi
+//     }
+// };
+
+
+// const john = {
+//     fullName : 'John Smith',
+//     mass:92,
+//     height:1.95,
+//     calcBMI: function(){
+//         this.bmi = this.mass / this.height ** 2;
+//         return this.bmi
+//     }
+// }
+
+// mark.calcBMI();
+// john.calcBMI();
+// console.log(Math.floor(mark.bmi));
+// console.log(Math.floor(john.bmi));
+
+// if(mark.bmi > john.bmi){
+// console.log(`${mark.fullName}'s BMI (${mark.bmi})
+// is higher than ${john.fullName}'s BMI (${john.bmi})`);
+// }else{
+//     console.log('this is else')
+// }
+//end
+
+
+//array start
+const sample = 'step'
+const type = [];
+
+for(let i = 0; i <= bruceArray.length; i++){
+    console.log(bruceArray[i], typeof bruceArray[i]);
+    // console.log(`${sample} ${i}`);
+    type[i] = typeof bruceArray[i]
+}
+console.log(type);
