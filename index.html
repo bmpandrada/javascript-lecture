@@ -255,15 +255,38 @@ console.log(answer);<br>
             </div>
         </div>
 
-        <div class="row">
+        <div class="row" id="container-dom">
             <div class="col-1">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction Dom</p>
             </div>
             <div class="col-2">
-                    <p>
-                        </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
+
+                <p>
+                    const number = document.getElementById('num');<br>
+const btn = document.querySelector('.btn');<br><br>
+
+
+
+btn.addEventListener('click',function(){<br>
+    let random = Math.trunc(Math.random()*6)+1;<br>
+    number.innerHTML=random<br>
+    if(random === 5){<br>
+       number.innerHTML='win'<br>
+       document.body.style.color='yellow'<br>
+       number.style.fontSize='4.5rem'<br>
+    }else{<br>
+        document.body.style.color=''<br>
+        number.style.fontSize=''<br>
+    }<br>
+    console.log(random);<br>
+})<br>
+                </p>
+
+
+                    
+                        <button class="btn" >click</button>
+                    <h1 class="answer">Output: guess my num <span class="h1" id="num"> </span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
         </div>
