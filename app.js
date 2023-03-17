@@ -1,7 +1,7 @@
 'use strict';
 
 const number = document.querySelector('.number');
-const scored = document.querySelector('.score');
+let scored = document.querySelector('.score');
 const btnCheck = document.querySelector('.check');
 const btnAgain = document.querySelector('.again');
 
@@ -33,7 +33,7 @@ btnCheck.addEventListener('click',function(){
     }else{
         if(score > 1){
             displayMessage(guess > secretNumber ? 'to high' : 'to low')//itenary string
-            score--; //decrease setState
+            score--; //decrease
             scored.textContent=score
         }else{
             displayMessage('you lost')
@@ -46,10 +46,11 @@ btnCheck.addEventListener('click',function(){
 //reset
 btnAgain.addEventListener('click', function(){
     randomNumber()
-    let score = 20;
+    score = 20;
+    scored.textContent=score
     number.textContent='?'
     highscore.textContent=0;
-    scored.textContent=score;
+    
     number.style.width =''
     displayMessage('Start guessing...')
     Number(document.querySelector('.guess').value='')
