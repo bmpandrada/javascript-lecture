@@ -38,7 +38,7 @@ btnCheck.addEventListener('click',function(){
         }else{
             displayMessage('you lost');
             scored.textContent=0;
-            document.body.style.background='red';
+            document.body.style.background='darkred';
         }     
     }
 })
