@@ -8,6 +8,7 @@ const btnAgain = document.querySelector('.again');
 let highscore = document.querySelector('.highscore');
 let message = document.querySelector('.message');
 let score = 20; //create newState for score
+let highScored = 0; //create highscore
 let displayMessage = function(x){ message.textContent=x};//newState for message
 let secretNumber = (Math.trunc(Math.random()*20)+1);
 
@@ -30,6 +31,10 @@ btnCheck.addEventListener('click',function(){
         number.style.width ='30rem';
         number.textContent=secretNumber;
         document.body.style.background='#60b347';
+        if(score > highScored){
+            highScored = score;
+            highscore.textContent = highScored;
+        }
     }else{
         if(score > 1){
             displayMessage(guess > secretNumber ? 'to high' : 'to low');//itenary string
