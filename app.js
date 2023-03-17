@@ -49,7 +49,7 @@ btnAgain.addEventListener('click', function(){
     score = 20;
     number.textContent='?';
     number.style.width ='';
-    highscore.textContent=0;
+    highscore.textContent=score;
     scored.textContent=score;
     displayMessage('Start guessing...');
     document.body.style.background='#222';
