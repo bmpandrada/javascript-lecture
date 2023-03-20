@@ -351,17 +351,30 @@ btn.addEventListener('click',function(){
 // }
 // calAge(1990)
 
+// const bruce ={
+//     year:1998,
+//     calAge : function(){
+//         console.log(2023 - this.year);
+//     }
+// }
+
+// bruce.calAge()
+// const bea = {
+//     year:2001,
+// };
+
+// bea.calAge = bruce.calAge;
+// bea.calAge();
+
+//function vs arrow
+
 const bruce ={
+    fname:'bruce',
     year:1998,
     calAge : function(){
         console.log(2023 - this.year);
-    }
+    },
+    greet: () => console.log(`hey ${fname}`)
 }
 
-bruce.calAge()
-const bea = {
-    year:2001,
-};
-
-bea.calAge = bruce.calAge;
-bea.calAge();
+bruce.greet();
