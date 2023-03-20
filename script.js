@@ -368,13 +368,53 @@ btn.addEventListener('click',function(){
 
 //function vs arrow
 
-const bruce ={
-    fname:'bruce',
-    year:1998,
-    calAge : function(){
-        console.log(2023 - this.year);
-    },
-    greet: () => console.log(`hey ${fname}`)
-}
+// const bruce ={
+//     fname:'bruce',
+//     year:1998,
+//     calAge : function(){
+//         console.log(2023 - this.year);
+//     },
+//     greet: () => console.log(`hey ${fname}`)
+// }
 
-bruce.greet();
+// bruce.greet();
+
+
+// const bruce ={
+//     fname:'bruce',
+//     year:1991,
+//     calAge : function(){
+//         console.log(2023 - this.year);
+
+        // const self = this;
+        // const isMillenial = function(){
+        //     console.log(self)
+        //     console.log(self.year >= 1981 && self.year <= 1996);
+        // };
+     
+//         const isMillenial = () =>{
+//             const year = bruce.year
+//             console.log(bruce)
+//             console.log(year >= 1981 && year <= 1996);
+//         };
+//         isMillenial();
+//     },
+//     greet: function() {console.log(`hey ${this.fname}`)},
+// }
+
+// bruce.greet();
+// bruce.calAge();
+//{
+
+const addExpr = function(a, b){
+    console.log(arguments);
+    return a + b 
+ };
+ 
+ addExpr(2,5);
+ addExpr(22,22)
+ const addArrow = (a, b) => {
+  
+    return console.log(a+ b); 
+}
+addArrow(2,5)

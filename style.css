@@ -121,7 +121,6 @@ main nav ul li a{
     color: aliceblue;
     text-decoration: none;
     text-transform: uppercase;
-    
 }
 
 .mobile{
@@ -137,11 +136,17 @@ main nav ul li a{
    
 }
 .list-logo{
-    width: 100%;
+    left:  0;
+    position: absolute;
+    display: flex;
+    top: 15%;
+    padding-left: 1rem;
+   
 }
 .list .title-nav{
     font-weight: 900;
     letter-spacing: .2rem;
+    
 }
 .mobile h2:hover{
     background-color: black;
