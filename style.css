@@ -19,6 +19,8 @@ body{
 main{
     background: rgb(1, 84, 139);
     width: 100%;
+    backface-visibility: hidden;
+    
 }
 
 h1{
@@ -114,6 +116,7 @@ main nav ul li a{
     text-transform: uppercase;
     
 }
+
 .mobile{
     margin-top: 4rem;
     position: fixed;
@@ -123,11 +126,27 @@ main nav ul li a{
     display: flex;
     flex-direction: column;
     display: none;
+    
    
+}
+.list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.list .title-nav{
+    font-weight: 900;
+    letter-spacing: .2rem;
+}
+.mobile h2:hover{
+    background-color: black;
+    transition: all 0.6s ease-in;
 }
 .mobile h2 a{
     color: wheat;
     text-decoration: none;
+  
 }
 
 .navItem{
@@ -161,7 +180,7 @@ main nav ul li a{
       
     }
     .title-js{
-        margin-top: 10rem;
+        margin-top: 11rem;
     }
     .col-1, .col-2{
         padding: 3rem;
