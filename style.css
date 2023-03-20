@@ -129,11 +129,8 @@ main nav ul li a{
     
    
 }
-.list{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+.list-logo{
+    width: 100%;
 }
 .list .title-nav{
     font-weight: 900;
