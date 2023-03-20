@@ -1,7 +1,13 @@
 const navbar = document.querySelector('.burger');
 const navbarItems = document.querySelector('.mobile');
+const closeLinks = document.querySelectorAll('.mobile h2')
 
 
+for(let i = 0; i < closeLinks.length; i++){
+    closeLinks[i].addEventListener('click', function(){
+        navbarItems.classList.toggle('navItem')
+    })
+}
 navbar.addEventListener('click', function(){
    navbarItems.classList.toggle('navItem')
 })
