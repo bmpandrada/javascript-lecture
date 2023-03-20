@@ -19,8 +19,9 @@ body{
 
 main{
     background: rgb(1, 84, 139);
-    width: 100%;
+    width: auto;
     backface-visibility: hidden;
+   
     
 }
 
