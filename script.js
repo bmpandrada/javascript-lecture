@@ -1,3 +1,12 @@
+const navbar = document.querySelector('.burger');
+const navbarItems = document.querySelector('.mobile');
+
+
+navbar.addEventListener('click', function(){
+   navbarItems.classList.toggle('navItem')
+})
+
+
 //calling function other function
 // function multi(x){
 // const multiply = x * 2
