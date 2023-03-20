@@ -296,24 +296,35 @@ btn.addEventListener('click',function(){
 })
 
 
-const myName = 'bruce';
+// const myName = 'bruce';
 
-function first(){
-    const age = 30;
+// function first(){
+//     const age = 30;
 
-    if(age >= 30){
-        const decade = 3;
-        var millenial = true;
-    }
-    function second(){
-        const job = 'teacher';
-        console.log(`${myName} is a ${age} years old ${job}`);
-    }
-    second();
-}
+//     if(age >= 30){
+//         const decade = 3;
+//         var millenial = true;
+//     }
+//     function second(){
+//         const job = 'teacher';
+//         console.log(`${myName} is a ${age} years old ${job}`);
+//     }
+//     second();
+// }
 
-first();
+// first();
 
 
 //hoisting
+// console.log(addDecl(2,3));
+// console.log(addExpr(2,3));
+// console.log(addArrow(2,3));
+
+// function  addDecl(a,b){
+// return a+b
+// }
+// const addExpr = function(a, b){
+//     return a + b;
+// }
+// const addArrow = (a,b) => a + b
 

@@ -427,14 +427,23 @@ btn.addEventListener('click',function(){<br>
 
         <div class="row">
             <div class="col-1">
-                <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Hoisting and TDZ sample</p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p>console.log(addDecl(2,3));<br>
+                        console.log(addExpr(2,3));<br>
+                        console.log(addArrow(2,3));<br>
+                        <br>
+                        function  addDecl(a,b){<br>
+                        return a+b<br>
+                        }<br><br>
+                        const addExpr = function(a, b){<br>
+                            return a + b;<br>
+                        }<br><br>
+                        const addArrow = (a,b) => a + b<br>
                         </p>
                     <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                      &nbsp; <span class="h1">addDecl: 5 &nbsp; addExpr:  ReferenceError &nbsp;addArrow: ReferenceError </span>  </h1>
             </div>
         </div>
 
