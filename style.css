@@ -214,8 +214,8 @@ main nav ul li a{
     main ul li{
     display: none;
     }
-    .tables{
-     
+    .table{
+        padding: .5rem;
         text-align: center;
         width: 50%;
         background-color: black;
