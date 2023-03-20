@@ -10,6 +10,7 @@ html{
    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 body{
+   overflow:hidden;
    box-sizing: inherit;
 }
 
@@ -20,13 +21,19 @@ main{
    width: 100%;
    background-color:green;
    position: relative;
+  
 }
 header{
    display:flex;
    padding:1rem;
    justify-content: space-around;
    align-items: center;
+   width: auto;
+   min-width: auto;
+   max-width: auto;
 }
+
+
 
 .box1{
    padding:1rem 5rem;
@@ -39,7 +46,7 @@ header{
    letter-spacing: 3.1px;
    font-size: 1.1rem;
    margin: 1rem;
-   width: 350px;
+   width: 100%;
 }
 
 .box1 button{
@@ -57,7 +64,6 @@ header{
    transform: translate(-50%, 0%);
    width: 100%;
    background-color: rgba(19, 77, 2, 0.865) ;
-
    position: absolute;
    height: 100%;
   display: none;
@@ -97,4 +103,17 @@ header{
 .modal-box button:hover{
   background-color: darkslategrey;
   scale: 0.888;
+}
+
+
+@media only screen and (max-width: 700px) {
+   header{
+      display:flex;
+      padding:1rem;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      width: auto;
+   }
+   
 }
