@@ -276,24 +276,24 @@ navbar.addEventListener('click', function(){
 // calTemp(temp)
 
 
-// const number = document.getElementById('num');
-// const btn = document.querySelector('.btn');
-// const background = document.getElementById('container-dom')
+const number = document.getElementById('num');
+const btn = document.querySelector('.btn');
+const background = document.getElementById('container-dom')
 
 
-// btn.addEventListener('click',function(){
-//     let random = Math.trunc(Math.random()*6)+1;
-//     number.innerHTML=random
-//     if(random === 5){
-//        number.innerHTML='win'
-//        background.style.background='darkorange'
-//        number.style.fontSize='4.5rem'
-//     }else{
-//         background.style.background=''
-//         number.style.fontSize=''
-//     }
-//     console.log(random);
-// })
+btn.addEventListener('click',function(){
+    let random = Math.trunc(Math.random()*6)+1;
+    number.innerHTML=random
+    if(random === 5){
+       number.innerHTML='win'
+       background.style.background='darkorange'
+       number.style.fontSize='4.5rem'
+    }else{
+        background.style.background=''
+        number.style.fontSize=''
+    }
+    console.log(random);
+})
 
 
 const myName = 'bruce';

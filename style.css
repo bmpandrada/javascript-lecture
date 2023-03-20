@@ -219,10 +219,9 @@ main nav ul li a{
     main ul li{
     display: none;
     }
-    .table{
-        font-size: .6rem;
-        text-align: center;
-        display:table;
+    table td{
+        font-size: .75rem;
+       
         background-color: black;
         flex-wrap: wrap;
     }
