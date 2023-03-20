@@ -258,40 +258,62 @@ navbar.addEventListener('click', function(){
 // }
 // console.log(type);
 
-const temp = [3,-2,-6-1, 'error', 9, 13, 17, 15, 14, 9, 5];
+// const temp = [3,-2,-6-1, 'error', 9, 13, 17, 15, 14, 9, 5];
 
 
-const calTemp = (temps) => {
-    let x = temps[0]
-    let n = temps[0]
-    for(let i = 0; i < temps.length; i++){
-        const curTemp = temps[i]
+// const calTemp = (temps) => {
+//     let x = temps[0]
+//     let n = temps[0]
+//     for(let i = 0; i < temps.length; i++){
+//         const curTemp = temps[i]
+//         if(curTemp > x) x = curTemp;
+//         if(curTemp < n) n = curTemp;
+//     } 
+//     console.log(x, n);   
+// }
 
-        if(curTemp > x) x = curTemp;
-        if(curTemp < n) n = curTemp;
-    } 
-    console.log(x, n);   
+
+// calTemp(temp)
+
+
+// const number = document.getElementById('num');
+// const btn = document.querySelector('.btn');
+// const background = document.getElementById('container-dom')
+
+
+// btn.addEventListener('click',function(){
+//     let random = Math.trunc(Math.random()*6)+1;
+//     number.innerHTML=random
+//     if(random === 5){
+//        number.innerHTML='win'
+//        background.style.background='darkorange'
+//        number.style.fontSize='4.5rem'
+//     }else{
+//         background.style.background=''
+//         number.style.fontSize=''
+//     }
+//     console.log(random);
+// })
+
+
+const myName = 'bruce';
+
+function first(){
+    const age = 30;
+
+    if(age >= 30){
+        const decade = 3;
+        var millenial = true;
+    }
+    function second(){
+        const job = 'teacher';
+        console.log(`${myName} is a ${age} years old ${job}`);
+    }
+    second();
 }
 
-
-calTemp([3, 7, 4, 1, 8])
-
-
-const number = document.getElementById('num');
-const btn = document.querySelector('.btn');
-const background = document.getElementById('container-dom')
+first();
 
 
-btn.addEventListener('click',function(){
-    let random = Math.trunc(Math.random()*6)+1;
-    number.innerHTML=random
-    if(random === 5){
-       number.innerHTML='win'
-       background.style.background='darkorange'
-       number.style.fontSize='4.5rem'
-    }else{
-        background.style.background=''
-        number.style.fontSize=''
-    }
-    console.log(random);
-})
+//hoisting
+

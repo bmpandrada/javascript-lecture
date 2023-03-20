@@ -28,9 +28,10 @@
                 <li class="list-item"><a href="#While">while</a></li>
                 <li class="list-item"><a href="#dom">dom</a></li>
                 <li class="list-item"><a href="#fArray">function array</a></li>
+                <li class="list-item"><a href="#scope">scope</a></li>
 
                 
-
+                
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -47,6 +48,7 @@
             <h2><a href="#While">while</a></h2>
             <h2><a href="#dom">dom</a></h2>
             <h2><a href="#fArray">function array</a></h2>
+             <h2><a href="#scope">scope</a></h2>
             <h2></h2>
         </div>
         
@@ -337,13 +339,39 @@ btn.addEventListener('click',function(){<br>
         </div>
 
         <div class="row">
-            <div class="col-1" id="loop">
+            <div class="col-1" id="scope">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction 3 types of sscope</p>
             </div>
             <div class="col-2">
-                    <p>
-                        </p>
+                    <p>1. Global Scope &nbsp; 2. Function Scope &nbsp; 3. Block Scope
+                        </p><br>
+                        1. Global Scope
+                        <li>Outside of any function or block</li>
+                        <li>Variables declared in global</li>
+                        <br>
+                        Ex: const me = 'Jordan'<br>
+                        <br>
+                        2.Function Scope
+                        <li>Variable are accessible only inside function, not outside.</li>
+                        <li>Also called local scope</li>
+                        <br>
+                        Ex: function calcAge(bday){<br>
+                            const now = 2023;<br>
+                            const age = now - bday;<br>
+                            return age;<br>
+                        }<br>
+                        <br>
+                        3. Block Scope
+                        <li>Variables are accessible only inside block</li>
+                        <li>However, this only applies to let and const Variables!</li>
+                        <li>Functions are also block scoped(only in strict mode)</li>
+                        <br>
+                        Ex: if(year >= 1981 && year <= 1996){<br>
+                            const millenial = true;<br>
+                            const food = 'Avocado toast';<br>
+                        } <--- Ex: if block, for loop block, etc.<br>
+                        console.log(millenial); // ReferenceError<br>
                     <h1 class="answer">Output: <span class="h1"></span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
@@ -352,7 +380,42 @@ btn.addEventListener('click',function(){<br>
         <div class="row">
             <div class="col-1">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction Hoisting the TDZ(temporal dead zone)</p>
+                <table>
+                    <tbody>
+                    <tr>
+                    <td>component</td>
+                    <td>Hoisted</td>
+                    <td>Initial Value</td>
+                    <td>Scope</td>
+                    </tr>
+                    <tr>
+                    <td>functiion declaration</td>
+                    <td>yes</td>
+                    <td>actual function</td>
+                    <td>block</td>
+                    </tr>
+                    <tr>
+                    <td>var variables</td>
+                    <td>yes</td>
+                    <td>undefined</td>
+                    <td>function</td>
+                    </tr>
+                      <tr>
+                    <td>let and const variable</td>
+                    <td>no</td>
+                    <td>unintialized, TDZ</td>
+                    <td>block</td>
+                    </tr>
+                      <tr>
+                    <td>function expression and arrow</td>
+                    <td>depends</td>
+                    <td>depends</td>
+                    <td>depends</td>
+                    </tr>
+                      
+                    </tbody>
+                    </table>
             </div>
             <div class="col-2">
                     <p>
