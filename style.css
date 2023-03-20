@@ -171,6 +171,12 @@ main nav ul li a{
     width: 100%;
  
 }
+.description{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-align: justify;
+    margin-top: 1rem;
+}
 
 .tables{
     width: 100%;
