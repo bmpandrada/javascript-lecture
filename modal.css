@@ -31,6 +31,7 @@ header{
    width: auto;
    min-width: auto;
    max-width: auto;
+
 }
 
 
@@ -69,6 +70,8 @@ header{
   display: none;
    align-items: center;
    padding: 5%;
+ 
+   
 }
 
 .modal-container .modal-box {
@@ -78,13 +81,16 @@ header{
    border: 1px solid greenyellow;
    background-color: aquamarine;
    border-radius: 3px;
+   z-index: 9;
 }
 .modal-container .modal-box p{
   padding: 3rem 0;
   margin-bottom: 1rem;
+  z-index: 9;
 }
 .show{
   display: flex;
+  
 }
 
 .modal-box button{
