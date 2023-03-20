@@ -169,9 +169,10 @@ main nav ul li a{
 }
 
 .tables{
-    width: auto;
+    width: 100%;
     font-size: 1rem;
     padding: 1rem;
+    text-align: center;
     background-color: black;
 }
 .tables tr:first-child{
@@ -213,7 +214,12 @@ main nav ul li a{
     main ul li{
     display: none;
     }
-  
+    .tables{
+     
+        text-align: center;
+        width: 50%;
+        background-color: black;
+    }
    
 
 }
