@@ -1,3 +1,6 @@
+'use strict';
+
+
 const navbar = document.querySelector('.burger');
 const navbarItems = document.querySelector('.mobile');
 const closeLinks = document.querySelectorAll('.mobile h2')
@@ -328,3 +331,37 @@ btn.addEventListener('click',function(){
 // }
 // const addArrow = (a,b) => a + b
 
+//this
+// const bruce = {
+//     name:'bruce',
+//     year:1999,
+//     calAge: function(){
+//         return 2023 - this.year
+//     }
+   
+// };
+
+ 
+// console.log(bruce.calAge());
+
+// console.log(this);
+// const calAge = (bday) => {
+//     console.log(2023 - bday);
+//     console.log(this);
+// }
+// calAge(1990)
+
+const bruce ={
+    year:1998,
+    calAge : function(){
+        console.log(2023 - this.year);
+    }
+}
+
+bruce.calAge()
+const bea = {
+    year:2001,
+};
+
+bea.calAge = bruce.calAge;
+bea.calAge();

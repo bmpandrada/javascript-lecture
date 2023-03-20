@@ -30,7 +30,7 @@
                 <li class="list-item"><a href="#fArray">function array</a></li>
                 <li class="list-item"><a href="#scope">scope</a></li>
                 <li class="list-item"><a href="#hoisting">hoisting</a></li>
-
+                <li class="list-item"><a href="#this">this</a></li>
                 
                 
                 <div class="burger">
@@ -49,9 +49,10 @@
             <h2><a href="#While">while</a></h2>
             <h2><a href="#dom">dom</a></h2>
             <h2><a href="#fArray">function array</a></h2>
-             <h2><a href="#scope">scope</a></h2>
-             <h2><a href="#hoisting">hoisting</a></h2>
-            <h2></h2>
+            <h2><a href="#scope">scope</a></h2>
+            <h2><a href="#hoisting">hoisting</a></h2>
+            <h2><a href="#this">this</a></h2>
+            
         </div>
         
        <section class="lecture-1">
@@ -448,15 +449,47 @@ btn.addEventListener('click',function(){<br>
         </div>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" id="this">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction 'This'</p>
+                <p class="description">“This” keyword refers to an object that is executing the current piece of code. It references the object that is executing the current function. If the function being referenced is a regular function, “this” references the global object. If the function that is being referenced is a method in an object, 
+                    “this” references the object itself.
+                    </p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p >Sample: 1.<br><br>
+                        const bruce = {<br>
+                            name:'bruce',<br>
+                            year:1999,<br>
+                            calAge: function(){<br>
+                                return 2023 - this.year<br>
+                            }<br>
+                           
+                        };<br>
+                        
+                         
+                        console.log(bruce.calAge());<br>
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                        <br>
+                        <p>Sample: 2.<br><br>
+                            
+                            const bruce ={
+                                year:1998,
+                                calAge : function(){
+                                    console.log(2023 - this.year);
+                                }
+                            }
+                            
+                            bruce.calAge()
+                            const bea = {
+                                year:2001,
+                            };
+                            
+                            bea.calAge = bruce.calAge;
+                            bea.calAge();
+                        </p>
+                    <h1 class="answer">Output: <span class="h1"> Sample: 1.) 25 &nbsp; Sample: 2.) 22</span>
+                     
             </div>
         </div>
 
