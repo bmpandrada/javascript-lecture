@@ -29,6 +29,7 @@
                 <li class="list-item"><a href="#dom">dom</a></li>
                 <li class="list-item"><a href="#fArray">function array</a></li>
                 <li class="list-item"><a href="#scope">scope</a></li>
+                <li class="list-item"><a href="#hoisting">hoisting</a></li>
 
                 
                 
@@ -49,6 +50,7 @@
             <h2><a href="#dom">dom</a></h2>
             <h2><a href="#fArray">function array</a></h2>
              <h2><a href="#scope">scope</a></h2>
+             <h2><a href="#hoisting">hoisting</a></h2>
             <h2></h2>
         </div>
         
@@ -371,17 +373,18 @@ btn.addEventListener('click',function(){<br>
                             const millenial = true;<br>
                             const food = 'Avocado toast';<br>
                         } <--- Ex: if block, for loop block, etc.<br>
-                        console.log(millenial); // ReferenceError<br>
-                    <h1 class="answer">Output: <span class="h1"></span>
+                        console.log(millenial); <br>
+                    <h1 class="answer">Output: <span class="h1">ReferenceError</span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" id="hoisting">
                 <h1>lecture</h1>
                 <p>Introduction Hoisting the TDZ(temporal dead zone)</p>
-                <table>
+                <br>
+                <table class="tables">
                     <tbody>
                     <tr>
                     <td>component</td>
@@ -417,12 +420,7 @@ btn.addEventListener('click',function(){<br>
                     </tbody>
                     </table>
             </div>
-            <div class="col-2">
-                    <p>
-                        </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
-            </div>
+            
         </div>
 
         <div class="row">

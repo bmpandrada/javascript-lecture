@@ -167,6 +167,23 @@ main nav ul li a{
  
 }
 
+.tables{
+    width: 100%;
+    font-size: 1rem;
+    padding: 1rem;
+    background-color: black;
+}
+.tables tr:first-child{
+    font-weight: 900;
+    color: rgb(173, 216, 18);
+    font-size: 1.2rem;
+
+}
+.tables td{
+    border: 1px solid white;
+    padding: 1rem;
+
+}
 
 
 @media only screen and (max-width: 700px) {
