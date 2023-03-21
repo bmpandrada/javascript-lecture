@@ -406,15 +406,16 @@ btn.addEventListener('click',function(){
 // bruce.calAge();
 //{
 
-const addExpr = function(a, b){
-    console.log(arguments);
-    return a + b 
- };
+// const addExpr = function(a, b){
+//     console.log(arguments);
+//     return a + b 
+//  };
  
- addExpr(2,5);
- addExpr(22,22)
- const addArrow = (a, b) => {
+//  addExpr(2,5);
+//  addExpr(22,22)
+//  const addArrow = (a, b) => {
   
-    return console.log(a+ b); 
-}
-addArrow(2,5)
+//     return console.log(a+ b); 
+// }
+// addArrow(2,5)
+
