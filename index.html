@@ -33,8 +33,9 @@
                 <li class="list-item"><a href="#this">this</a></li>
                 <li class="list-item"><a href="#Destructuring">Destructuring-Array</a></li>
                 <li class="list-item"><a href="#ObjectD">Destructuring-Object</a></li>
+                <li class="list-item"><a href="#Spread"> Spread-Operator</a></li>
 
-                
+               
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -56,6 +57,7 @@
             <h2><a href="#this">this</a></h2>
             <h2><a href="#Destructuring">Destructuring-Array</a></h2>
             <h2><a href="#ObjectD">Destructuring-Object</a></h2>
+            <h2><a href="#Spread"> Spread-Operator</a></h2>
         </div>
         
        <section class="lecture-1">
@@ -605,14 +607,16 @@ btn.addEventListener('click',function(){<br>
         </div>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" id="Spread">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction Spread Operator</p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p>const arr = [7,8,9];<br>
+                        const setArr = [1,2,3, ...arr]<br>
+                        console.log(setArr);<br>
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
+                    <h1 class="answer">Output: <span class="h1">(6) [1, 2, 3, 7, 8, 9]</span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
         </div>
