@@ -572,95 +572,104 @@ const restaurant = {
 
 // GOOD LUCK 😀
 
-const game = {
-  team1: 'Bayern Munich',
-  team2: 'Borrussia Dortmund',
-  players: [
-    [
-      'Neuer',
-      'Pavard',
-      'Martinez',
-      'Alaba',
-      'Davies',
-      'Kimmich',
-      'Goretzka',
-      'Coman',
-      'Muller',
-      'Gnarby',
-      'Lewandowski',
-    ],
-    [
-      'Burki',
-      'Schulz',
-      'Hummels',
-      'Akanji',
-      'Hakimi',
-      'Weigl',
-      'Witsel',
-      'Hazard',
-      'Brandt',
-      'Sancho',
-      'Gotze',
-    ],
-  ],
-  score: '4:0',
-  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
-  date: 'Nov 9th, 2037',
-  odds: {
-    team1: 1.33,
-    x: 3.25,
-    team2: 6.5,
-  },
-};
+// const game = {
+//   team1: 'Bayern Munich',
+//   team2: 'Borrussia Dortmund',
+//   players: [
+//     [
+//       'Neuer',
+//       'Pavard',
+//       'Martinez',
+//       'Alaba',
+//       'Davies',
+//       'Kimmich',
+//       'Goretzka',
+//       'Coman',
+//       'Muller',
+//       'Gnarby',
+//       'Lewandowski',
+//     ],
+//     [
+//       'Burki',
+//       'Schulz',
+//       'Hummels',
+//       'Akanji',
+//       'Hakimi',
+//       'Weigl',
+//       'Witsel',
+//       'Hazard',
+//       'Brandt',
+//       'Sancho',
+//       'Gotze',
+//     ],
+//   ],
+//   score: '4:0',
+//   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+//   date: 'Nov 9th, 2037',
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
 
 
-const player1 = game.players[0];
-const player2 = game.players[1];
+// const player1 = game.players[0];
+// const player2 = game.players[1];
 
-const allPlayers = [...player1, ...player2];
-console.log(allPlayers);
-
-
+// const allPlayers = [...player1, ...player2];
+// console.log(allPlayers);
 
 
-const gk1 = [player1[0]]
-const teamName1 = [game.teamOne, ...gk1]
-let fieldteams1 = [];
-for(let i = 1; i < player1.length; i++){
-  const field = player1[i];
-  fieldteams1.push(field)
-};
 
-const teamOne = `Team 1 Name: ${teamName1[0]} GoalKeeper: ${teamName1[1]} fieldteams:${fieldteams1}`;                                                                                                              
-console.log(teamOne);
 
-const gk2 = [player2[0]]
-const teamName2 = [game.teamTwo, ...gk2]
-let fieldteams2 = [];
-for(let i = 1; i < player2.length; i++){
-  const field = player2[i];
-  fieldteams2.push(field)
+// const gk1 = [player1[0]]
+// const teamName1 = [game.teamOne, ...gk1]
+// let fieldteams1 = [];
+// for(let i = 1; i < player1.length; i++){
+//   const field = player1[i];
+//   fieldteams1.push(field)
+// };
+
+// const teamOne = `Team 1 Name: ${teamName1[0]} GoalKeeper: ${teamName1[1]} fieldteams:${fieldteams1}`;                                                                                                              
+// console.log(teamOne);
+
+// const gk2 = [player2[0]]
+// const teamName2 = [game.teamTwo, ...gk2]
+// let fieldteams2 = [];
+// for(let i = 1; i < player2.length; i++){
+//   const field = player2[i];
+//   fieldteams2.push(field)
   
-};
+// };
 
-const teamTwo = `Team 2 Name: ${teamName2[0]} GoalKeeper: ${teamName2[1]} fieldteams:${fieldteams2}`;                                                                                                              
-console.log(teamTwo);
+// const teamTwo = `Team 2 Name: ${teamName2[0]} GoalKeeper: ${teamName2[1]} fieldteams:${fieldteams2}`;                                                                                                              
+// console.log(teamTwo);
 
-const playerFinal = [...player1, 'Thiago', 'Coutinho', 'Perisic'];
-console.log(playerFinal);
+// const playerFinal = [...player1, 'Thiago', 'Coutinho', 'Perisic'];
+// console.log(playerFinal);
 
 
-const {odds:{team1, x:draw, team2}} = game;
-console.log(team1, draw, team2);
+// const {odds:{team1, x:draw, team2}} = game;
+// console.log(team1, draw, team2);
 
-const printGoals = function(...manlalaro){
-console.log(`${manlalaro.length} goals were scored`);
+// const printGoals = function(...manlalaro){
+// console.log(`${manlalaro.length} goals were scored`);
+// }
+
+// // printGoals('Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels');
+// // printGoals('Lewandowski', 'Gnarby');
+// printGoals(...game.scored)
+
+// const winner = team1 > team2 ? 'team one win' : 'team two win';
+// console.log(winner);
+
+const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+
+for(const item of menu) 
+console.log(item);
+
+for(const [item, product] of menu.entries()){
+  console.log(`${item + 1}: ${product}`);
 }
-
-// printGoals('Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels');
-// printGoals('Lewandowski', 'Gnarby');
-printGoals(...game.scored)
-
-const winner = team1 > team2 ? 'team one win' : 'team two win';
-console.log(winner);
-
