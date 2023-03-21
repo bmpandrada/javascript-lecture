@@ -559,10 +559,41 @@ btn.addEventListener('click',function(){<br>
                 <p>Introduction Object Destructuring</p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p>const restaurant = {<br>
+                        name: 'Classico Italiano',<br>
+                        location: 'Via Angelo Tavanti 23, Firenze, Italy',<br>
+                        categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],<br>
+                        starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],<br>
+                        mainMenu: ['Pizza', 'Pasta', 'Risotto'],<br><br>
+                      
+                        openingHours: {<br>
+                          thu: {<br>
+                            open: 12,<br>
+                            close: 22,<br>
+                          },<br>
+                          fri: {<br>
+                            open: 11,<br
+                            close: 23,<br>
+                          },<br>
+                          sat: {<br>
+                            open: 0, // Open 24 hours<br>
+                            close: 24,<br>
+                          },<br>
+                        },<br>
+                        order: function(mainA, mainB){<br>
+                          return [this.starterMenu[mainA], this.mainMenu[mainB]]<br>
+                        }<br>
+                      };<br>
+                      <br>
+                     Ans 1:  console.log(restaurant.openingHours);<br>
+                      
+                      const {name:restaurantName, <br>
+                        openingHours: {...hours}, <br>
+                        categories:tags,} = restaurant<br>
+                        Ans 2: console.log(`Company Name: ${restaurantName}  menus: '${tags}' and schedule`, hours );<br>
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                    <h1 class="answer">Output: <span class="h1"> Ans 1: {thu: {…}, fri: {…}, sat: {…}}</span>
+                      &nbsp; <span class="h1">Ans 2: Company Name: Classico Italiano  menus: 'Italian,Pizzeria,Vegetarian,Organic' and schedule {thu: {…}, fri: {…}, sat: {…}}</span>  </h1>
             </div>
         </div>
 
