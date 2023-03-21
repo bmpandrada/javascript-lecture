@@ -139,7 +139,7 @@ main nav ul li a{
     left:  0;
     position: absolute;
     display: flex;
-    top: 25%;
+    top: 15%;
     padding-left: 1rem;
    
 }
@@ -237,6 +237,8 @@ main nav ul li a{
         background-color: black;
         flex-wrap: wrap;
     }
-   
+   .list-logo{
+    top: 25%;
+}
 
 }
