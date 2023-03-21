@@ -419,3 +419,236 @@ btn.addEventListener('click',function(){
 // }
 // addArrow(2,5)
 
+
+
+'use strict';
+
+// Data needed for a later exercise
+const flights =
+  '_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30';
+
+// Data needed for first part of the section
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+  // order: function(mainA, mainB){
+  //   return [this.starterMenu[mainA], this.mainMenu[mainB]]
+  // },
+  order: (ing1, ing2, ing3) =>{
+    return console.log(`${restaurant.starterMenu[ing1]} nice ${ing2} nice nice ${ing3}`);
+  }
+  
+};
+
+// console.log(restaurant.openingHours);
+
+// const {name:restaurantName, 
+//   openingHours: schedule = {thu, fri, sat},  
+//   categories:tags,} = restaurant
+// console.log(`Company Name: ${restaurantName}  menus: '${tags}' and schedule`,  schedule );
+
+
+// const {menu =[], starterMenu: first=[]} = restaurant;
+// console.log(menu, first);
+
+// const arr = [2,3,4];
+// const a = arr[0];
+// const b = arr[1];
+// const c = arr[2];
+
+// const [x,y,z]= arr;
+// console.log(x,y,z);
+
+// let [main, ,secondary,] = restaurant.categories;
+
+// console.log(main, secondary);
+
+// const temporary = main;
+// main = secondary;
+// secondary = temporary;
+
+// console.log(main, secondary);
+
+// [main, secondary] = [secondary, main]
+// console.log(main, secondary);
+// console.log(nested);
+
+// const nested = [2,4, [5,6]]
+
+
+// const [i, , [j, k]] = nested;
+// console.log(i, j, k); 
+
+// const arr = [7,8,9];
+// const setArr = [1,2,3, ...arr]
+// console.log(setArr);
+
+
+// const newFoods = [...restaurant.categories, 'Fish Tuna'];
+// console.log(newFoods);
+
+// const statePerson = {
+//   name:'bruce'
+// };
+
+// const setPerson = {...statePerson, hobbies:'basket ball'};
+// console.log(setPerson);
+
+
+
+
+// const menuFirst = restaurant.starterMenu;
+// const menuLast = restaurant.mainMenu;
+
+
+// const stateMenu = [...menuFirst, ...menuLast]
+// console.log(stateMenu);
+
+// const ingredients = [prompt('let\'s order ingredients 1'), prompt('let\'s order ingredients 2'),
+// prompt('let\'s order ingredients 3')]
+
+// restaurant.order(...ingredients)
+
+
+// const newRestaurant = {...restaurant, founder:'bruce'}
+// console.log(newRestaurant);
+
+// const newRestaurant1 = {...restaurant, founder:'bea'}
+// console.log(newRestaurant1);
+
+
+// console.log('bc' && 'bz');
+
+// console.log(3 || 'bruce');
+
+// console.log('bruce' && 'try')
+
+// const rest1 = {
+//   name:'phil',
+//   numGuest:20,
+// }
+// const rest2 = {
+//   name:'natoy',
+//   owner:'bruce'
+// }
+// console.log(rest2.numGuest ??= 10);
+// console.log(rest2);
+// rest2.numGuest = rest1.numGuest;
+
+// console.log(rest2);
+
+
+// We're building a football betting app (soccer for my American friends 😅)!
+
+// Suppose we get data from a web service about a certain game (below). In this challenge we're gonna work with the data. So here are your tasks:
+
+// 1. Create one player array for each team (variables 'players1' and 'players2')
+// 2. The first player in any player array is the goalkeeper and the others are field players. For Bayern Munich (team 1) create one variable ('gk') with the goalkeeper's name, and one array ('fieldPlayers') with all the remaining 10 field players
+// 3. Create an array 'allPlayers' containing all players of both teams (22 players)
+// 4. During the game, Bayern Munich (team 1) used 3 substitute players. So create a new array ('players1Final') containing all the original team1 players plus 'Thiago', 'Coutinho' and 'Perisic'
+// 5. Based on the game.odds object, create one variable for each odd (called 'team1', 'draw' and 'team2')
+// 6. Write a function ('printGoals') that receives an arbitrary number of player names (NOT an array) and prints each of them to the console, along with the number of goals that were scored in total (number of player names passed in)
+// 7. The team with the lower odd is more likely to win. Print to the console which team is more likely to win, WITHOUT using an if/else statement or the ternary operator.
+
+// TEST DATA FOR 6: Use players 'Davies', 'Muller', 'Lewandowski' and 'Kimmich'. Then, call the function again with players from game.scored
+
+// GOOD LUCK 😀
+
+// const game = {
+//   team1: 'Bayern Munich',
+//   team2: 'Borrussia Dortmund',
+//   players: [
+//     [
+//       'Neuer',
+//       'Pavard',
+//       'Martinez',
+//       'Alaba',
+//       'Davies',
+//       'Kimmich',
+//       'Goretzka',
+//       'Coman',
+//       'Muller',
+//       'Gnarby',
+//       'Lewandowski',
+//     ],
+//     [
+//       'Burki',
+//       'Schulz',
+//       'Hummels',
+//       'Akanji',
+//       'Hakimi',
+//       'Weigl',
+//       'Witsel',
+//       'Hazard',
+//       'Brandt',
+//       'Sancho',
+//       'Gotze',
+//     ],
+//   ],
+//   score: '4:0',
+//   scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+//   date: 'Nov 9th, 2037',
+//   odds: {
+//     team1: 1.33,
+//     x: 3.25,
+//     team2: 6.5,
+//   },
+// };
+
+
+// const player1 = game.players[0];
+// const player2 = game.players[1];
+
+// const allPlayers = player1 + player2;
+// console.log(allPlayers);
+
+// for(let i){
+
+// }
+
+
+// const gk1 = [player1[0]]
+// const teamName1 = [game.team1, ...gk1]
+// let fieldteams1 = [];
+// for(let i = 1; i < player1.length; i++){
+//   const field = player1[i];
+//   fieldteams1.push(field)
+  
+// };
+
+// const team1 = `Team Name: ${teamName1[0]} GoalKeeper: ${teamName1[1]} fieldteams:${fieldteams1}`;                                                                                                              
+// console.log(team1);
+
+// const gk2 = [player2[0]]
+// const teamName2 = [game.team2, ...gk2]
+// let fieldteams2 = [];
+// for(let i = 1; i < player2.length; i++){
+//   const field = player2[i];
+//   fieldteams2.push(field)
+  
+// };
+
+// const team2 = `Team Name: ${teamName2[0]} GoalKeeper: ${teamName2[1]} fieldteams:${fieldteams2}`;                                                                                                              
+// console.log(team2);
+
+
+
+
