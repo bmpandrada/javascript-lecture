@@ -67,7 +67,7 @@ h1{
 }
 
 .col-1{
-    width: 50%;
+    width: 25%;
     text-align: end;
     padding: 4em;
     text-transform: capitalize;
@@ -75,7 +75,7 @@ h1{
     letter-spacing: 1px;
 }
 .col-2{
-    width: 50%;
+    width: 75%;
     font-size: 2rem;
     font-weight: 300;
     text-align: start ;
