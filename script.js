@@ -664,12 +664,16 @@ const restaurant = {
 // const winner = team1 > team2 ? 'team one win' : 'team two win';
 // console.log(winner);
 
-const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
+
+//loop array
+
+// const menu = [...restaurant.starterMenu, ...restaurant.mainMenu];
 
 
-for(const item of menu) 
-console.log(item);
+// for(const item of menu) 
+// console.log(item);
 
-for(const [item, product] of menu.entries()){
-  console.log(`${item + 1}: ${product}`);
-}
+// for(const [item, product] of menu.entries()){
+//   console.log(`${item + 1}: ${product}`);
+// }
+//Enhanced object literals
