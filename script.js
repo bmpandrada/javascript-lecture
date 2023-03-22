@@ -680,16 +680,20 @@ btn.addEventListener('click',function(){
 
 
 // Data needed for a later exercise
+
+
+const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+
 const openingHours = {
-  thu: {
+  [weekdays[0]]: {
     open: 12,
     close: 22,
   },
-  fri: {
+  [weekdays[4]]: {
     open: 11,
     close: 23,
   },
-  sat: {
+  [weekdays[5] +'-'+ weekdays[6] ]:{
     open: 0,
     close: 24,
   },

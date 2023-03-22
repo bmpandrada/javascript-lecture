@@ -358,32 +358,32 @@ btn.addEventListener('click',function(){<br>
             <div class="col-2">
                     <p>1. Global Scope &nbsp; 2. Function Scope &nbsp; 3. Block Scope
                         </p><br>
-                        1. Global Scope
+                       <p>1. Global Scope</p> 
                         <li>Outside of any function or block</li>
                         <li>Variables declared in global</li>
                         <br>
                         Ex: const me = 'Jordan'<br>
                         <br>
-                        2.Function Scope
+                        <p>2.Function Scope</p> 
                         <li>Variable are accessible only inside function, not outside.</li>
                         <li>Also called local scope</li>
                         <br>
-                        Ex: function calcAge(bday){<br>
-                            const now = 2023;<br>
-                            const age = now - bday;<br>
-                            return age;<br>
+                      <p>Ex: function calcAge(bday){<br>
+                        const now = 2023;<br>
+                        const age = now - bday;<br>
+                        return age;<br></p>  
                         }<br>
                         <br>
-                        3. Block Scope
+                       <p>3. Block Scope</p> 
                         <li>Variables are accessible only inside block</li>
                         <li>However, this only applies to let and const Variables!</li>
                         <li>Functions are also block scoped(only in strict mode)</li>
                         <br>
-                        Ex: if(year >= 1981 && year <= 1996){<br>
+                    <p>    Ex: if(year >= 1981 && year <= 1996){<br>
                             const millenial = true;<br>
                             const food = 'Avocado toast';<br>
                         } <--- Ex: if block, for loop block, etc.<br>
-                        console.log(millenial); <br>
+                        console.log(millenial); <br></p>
                     <h1 class="answer">Output: <span class="h1">ReferenceError</span>
                       &nbsp; <span class="h1"></span>  </h1>
             </div>
@@ -684,6 +684,25 @@ btn.addEventListener('click',function(){<br>
                 <p>Introduction Enhanced object literals</p>
             </div>
             <div class="col-2">
+                    <p>
+                    const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];<br><br>
+
+                    const openingHours = {<br>
+                    [weekdays[0]]: {<br>
+                    open: 12,<br>
+                    close: 22,<br>
+                    },<br>
+                    [weekdays[4]]: {<br>
+                    open: 11,<br>
+                    close: 23,<br>
+                    },<br>
+                    [weekdays[5] +'-'+ weekdays[6] ]:{<br>
+                    open: 0,<br>
+                    close: 24,<br>
+                    },<br>
+                    };<br><br>
+                    </p>
+
                     <p>const openingHours = {<br>
                         thu: {<br>
                           open: 12,<br>
