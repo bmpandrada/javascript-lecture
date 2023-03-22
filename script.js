@@ -682,30 +682,30 @@ btn.addEventListener('click',function(){
 // Data needed for a later exercise
 
 
-const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
+// const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
-const openingHours = {
-  [weekdays[1]]: {
-    open: 12,
-    close: 22,
-  },
-  [weekdays[0]]: {
-    open: 11,
-    close: 23,
-  },
-  [weekdays[3] +'-'+ weekdays[6] ]:{
-    open: 0,
-    close: 24,
-  },
-};
+// const openingHours = {
+//   [weekdays[1]]: {
+//     open: 12,
+//     close: 22,
+//   },
+//   [weekdays[0]]: {
+//     open: 11,
+//     close: 23,
+//   },
+//   [weekdays[3] +'-'+ weekdays[6] ]:{
+//     open: 0,
+//     close: 24,
+//   },
+// };
 
 
-const restaurant = {
+// const restaurant = {
   // starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
-  openingHours,
+  // openingHours,
   // order: (ing1, ing2, ing3) =>{
   //   return console.log(`${restaurant.starterMenu[ing1]} nice ${restaurant.starterMenu[ing2]} nice nice ${restaurant.starterMenu[ing3]}`);
-  }
+  // }
 // };
 // for(const day of weekdays){
 //   const open = restaurant.openingHours[day]?.open;
@@ -714,9 +714,9 @@ const restaurant = {
 
 // const dayLength = Object.keys(openingHours);
 // console.log(`${dayLength.length} days of ${dayLength}`);
-for(const day of Object.keys(openingHours)){
-  console.log(`${day} schedule`);
-}
+// for(const day of Object.keys(openingHours)){
+//   console.log(`${day} schedule`);
+// }
 
 
 // let openStr = `We are open on ${dayLength.length} days: `;
@@ -727,12 +727,12 @@ for(const day of Object.keys(openingHours)){
 // console.log(openStr);
 
 // console.log(restaurant.openingHours.mon?.less || restaurant.openingHours.mon);
-const detail =[];
-for(const [i, j] of weekdays.entries()){
-  detail.push(i + 1, j)
+// const detail =[];
+// for(const [i, j] of weekdays.entries()){
+//   detail.push(i + 1, j)
 
-}
-console.log(detail);
+// }
+// console.log(detail);
 
 // console.log(restaurant);
 // restaurant.order(1,2,3);
@@ -753,5 +753,51 @@ console.log(detail);
 //   }
 // }
 // fetchApi()
+
+// const myname = [
+//   { fname: 'bruce', id:12,}
+//  ]
+//  console.log(...myname)
+ 
+//  myname.map(({fname, id})=>{
+//    console.log(`$fname: '${fname}', id: ${id}`);
+//  })
+
+
+const restaurant = {
+  name: 'Classico Italiano',
+  location: 'Via Angelo Tavanti 23, Firenze, Italy',
+  categories: ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'],
+  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  mainMenu: ['Pizza', 'Pasta', 'Risotto'],
+
+  openingHours: {
+    thu: {
+      open: 12,
+      close: 22,
+    },
+    fri: {
+      open: 11,
+      close: 23,
+    },
+    sat: {
+      open: 0, // Open 24 hours
+      close: 24,
+    },
+  },
+  // order: function(mainA, mainB){
+  //   return [this.starterMenu[mainA], this.mainMenu[mainB]]
+  // },
+  order: (ing1, ing2, ing3) =>{
+    return console.log(`${restaurant.starterMenu[ing1]} nice ${ing2} nice nice ${ing3}`);
+  }
+  
+};
+
+const rest = new Map();
+rest.set('name', 'classico');
+rest.set(1, 'fire');
+rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])
+console.log(rest);
 
 

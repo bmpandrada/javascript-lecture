@@ -154,8 +154,10 @@ main nav ul li a{
 .mobile h2:hover{
     background-color: black;
     transition: all 0.6s ease-in;
-    width: 100%;
+    width: 100%;    
 }
+
+
 .mobile h2{
     width: 100%;
     padding: .5rem 2rem;
@@ -213,6 +215,7 @@ main nav ul li a{
     padding: 1rem;
 
 }
+
 
 
 @media only screen and (max-width: 700px) {
