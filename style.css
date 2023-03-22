@@ -160,12 +160,11 @@ main nav ul li a{
     padding: .5rem 2rem;
     text-transform: capitalize;
     font-weight: 500;
+    cursor: pointer;
 }
 .mobile h2 a{
     color: wheat;
     text-decoration: none;
-
-  
 }
 
 .navItem{
@@ -208,7 +207,7 @@ main nav ul li a{
     font-size: 1.2rem;
 
 }
-.tables td{
+.tables td:inv{
     border: 1px solid white;
     padding: 1rem;
 
