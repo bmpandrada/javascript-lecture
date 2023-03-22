@@ -232,9 +232,14 @@ main nav ul li a{
     }
     .col-1{
         text-align: center;
+        font-size: 1.5rem;
     }
-  
-  
+    .col-2 p{
+        font-size: 1.5rem;
+    }
+    .answer{
+        font-size: 1.5rem;
+    }
     .burger{
         display: block;
     }
