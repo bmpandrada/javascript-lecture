@@ -38,7 +38,7 @@
                 <li class="list-item"><a href="#objectL"> Object-Literals</a></li>
                 <li class="list-item"><a href="#Chaining">  Optional-Chaining</a></li>
                 <li class="list-item"><a href="#ve">  keys|Values|Entries</a></li>
-
+                <li class="list-item"><a href="#Maps">  Map-Iterations</a></li>
                 
                
                 <div class="burger">
@@ -67,6 +67,7 @@
             <h2><a href="#objectL"> Object-Literals</a></h2>
             <h2><a href="#Chaining"> Optional-Chaining</a></h2>
             <h2><a href="#ve">  keys|Values|Entries</a></h2>
+            <h2><a href="#Maps">  Maps-Iteration</a></h2>
         </div>
         
        <section class="lecture-1">
@@ -847,15 +848,22 @@ console.log(detail);
         </div>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" id="Maps">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction Map Iterations</p>
             </div>
             <div class="col-2">
-                    <p>
+                    <p>const rest = new Map();<br>
+                        rest.set('name', 'classico');<br>
+                        rest.set(1, 'fire');<br>
+                        rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])<br>
+                        .set(true, 'we are open')<br>
+                        console.log(rest);<br><br>
+                        
+                        console.log(rest.get(true));<br>
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                    <h1 class="answer">Output: <span class="h1">log 1: Map(4) {'name' => 'classico', 1 => 'fire', 'categories' => Array(4), true => 'we are open'}</span>
+                      &nbsp;  &nbsp;  &nbsp;  <span class="h1">log 2: we are open</span>  </h1>
             </div>
         </div>
 

@@ -798,6 +798,9 @@ const rest = new Map();
 rest.set('name', 'classico');
 rest.set(1, 'fire');
 rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])
+.set(true, 'we are open')
 console.log(rest);
+
+console.log(rest.get(true));
 
 
