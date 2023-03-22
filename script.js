@@ -685,15 +685,15 @@ btn.addEventListener('click',function(){
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 
 const openingHours = {
-  [weekdays[0]]: {
+  [weekdays[1]]: {
     open: 12,
     close: 22,
   },
-  [weekdays[4]]: {
+  [weekdays[0]]: {
     open: 11,
     close: 23,
   },
-  [weekdays[5] +'-'+ weekdays[6] ]:{
+  [weekdays[3] +'-'+ weekdays[6] ]:{
     open: 0,
     close: 24,
   },
@@ -701,25 +701,38 @@ const openingHours = {
 
 
 const restaurant = {
-  starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
+  // starterMenu: ['Focaccia', 'Bruschetta', 'Garlic Bread', 'Caprese Salad'],
   openingHours,
-  order: (ing1, ing2, ing3) =>{
-    return console.log(`${restaurant.starterMenu[ing1]} nice ${restaurant.starterMenu[ing2]} nice nice ${restaurant.starterMenu[ing3]}`);
+  // order: (ing1, ing2, ing3) =>{
+  //   return console.log(`${restaurant.starterMenu[ing1]} nice ${restaurant.starterMenu[ing2]} nice nice ${restaurant.starterMenu[ing3]}`);
   }
-};
-for(const day of weekdays){
-  const open = restaurant.openingHours[day]?.open;
-  console.log(` on ${day}, we open at ${open ?? 'not available'}`);
+// };
+// for(const day of weekdays){
+//   const open = restaurant.openingHours[day]?.open;
+//   console.log(` on ${day}, we open at ${open ?? 'not available'}`);
+// }
+
+// const dayLength = Object.keys(openingHours);
+// console.log(`${dayLength.length} days of ${dayLength}`);
+for(const day of Object.keys(openingHours)){
+  console.log(`${day} schedule`);
 }
 
 
-// console.log(restaurant.openingHours.mon?.less || restaurant.openingHours.mon);
-// const detail =[];
-// for(const [i, j] of weekdays.entries()){
-//   detail.push(i + 1, j)
-
+// let openStr = `We are open on ${dayLength.length} days: `;
+// for(const day of dayLength){
+// openStr += `${day}`
 // }
-// console.log(detail);
+
+// console.log(openStr);
+
+// console.log(restaurant.openingHours.mon?.less || restaurant.openingHours.mon);
+const detail =[];
+for(const [i, j] of weekdays.entries()){
+  detail.push(i + 1, j)
+
+}
+console.log(detail);
 
 // console.log(restaurant);
 // restaurant.order(1,2,3);

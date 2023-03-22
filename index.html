@@ -37,8 +37,10 @@
                 <li class="list-item"><a href="#LoopA"> Looping-Arrays</a></li>
                 <li class="list-item"><a href="#objectL"> Object-Literals</a></li>
                 <li class="list-item"><a href="#Chaining">  Optional-Chaining</a></li>
+                <li class="list-item"><a href="#ve">  keys|Values|Entries</a></li>
+
                 
-             
+               
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -64,6 +66,7 @@
             <h2><a href="#LoopA"> Looping-Arrays</a></h2>
             <h2><a href="#objectL"> Object-Literals</a></h2>
             <h2><a href="#Chaining"> Optional-Chaining</a></h2>
+            <h2><a href="#ve">  keys|Values|Entries</a></h2>
         </div>
         
        <section class="lecture-1">
@@ -792,15 +795,54 @@ btn.addEventListener('click',function(){<br>
         </div>
 
         <div class="row">
-            <div class="col-1">
+            <div class="col-1" id="ve">
                 <h1>lecture</h1>
-                <p>Introduction Loop</p>
+                <p>Introduction keys|Values|Entries</p>
             </div>
             <div class="col-2">
                     <p>
-                        </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
+                        const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun']; <br>
+                        <br>
+const openingHours = {<br>
+  [weekdays[1]]: {<br>
+    open: 12,<br>
+    close: 22,<br>
+  },<br>
+  [weekdays[0]]: {<br>
+    open: 11,<br>
+    close: 23,<br>
+  },<br>
+  [weekdays[3] +'-'+ weekdays[6] ]:{<br>
+    open: 0,<br>
+    close: 24,<br>
+  },<br>
+};<br><br>
+
+
+const restaurant = {<br>
+    openingHours,<br>
+};<br><br>
+
+Keys:<br><br>
+for(const day of Object.keys(openingHours)){<br>
+    console.log(`${day} schedule`);<br>
+  }<br><br>
+
+  Entries:<br><br>
+const detail =[];<br>
+for(const [i, j] of weekdays.entries()){<br>
+  detail.push(i + 1, j)<br>
+  <br>
+}<br>
+console.log(detail);
+                    </p>
+                       
+                    <h1 class="answer">Output: <span class="h1">Keys: <br>
+                        tue schedule
+                         mon schedule
+                        thu-sun schedule</span><br>
+                        &nbsp; <span class="h1">Entries: <br>
+                            [1, 'mon', 2, 'tue', 3, 'wed', 4, 'thu', 5, 'fri', 6, 'sat', 7, 'sun']</span>  </h1>
             </div>
         </div>
 
