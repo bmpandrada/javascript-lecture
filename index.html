@@ -36,8 +36,9 @@
                 <li class="list-item"><a href="#Spread"> Spread-Operator</a></li>
                 <li class="list-item"><a href="#LoopA"> Looping-Arrays</a></li>
                 <li class="list-item"><a href="#objectL"> Object-Literals</a></li>
+                <li class="list-item"><a href="#Chaining">  Optional-Chaining</a></li>
                 
-              
+             
                 <div class="burger">
                     <div></div>
                     <div></div>
@@ -62,6 +63,7 @@
             <h2><a href="#Spread"> Spread-Operator</a></h2>
             <h2><a href="#LoopA"> Looping-Arrays</a></h2>
             <h2><a href="#objectL"> Object-Literals</a></h2>
+            <h2><a href="#Chaining"> Optional-Chaining</a></h2>
         </div>
         
        <section class="lecture-1">
@@ -744,6 +746,61 @@ btn.addEventListener('click',function(){<br>
                         : 
                         Object</span><br><br>
                       &nbsp; <span class="h1">Ans 2.) Bruschetta nice Garlic Bread nice nice Caprese Salad</span>  </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1" id="Chaining">
+                <h1>lecture</h1>
+                <p>Introduction Optional Chaining</p>
+            </div>
+            <div class="col-2">
+                    <p>const weekdays = ['mon', 'tue', 'wed', <br>
+                        'thu', 'fri', 'sat', 'sun'];<br><br>
+
+                        const openingHours = {<br>
+                          [weekdays[0]]: {<br>
+                            open: 12,<br>
+                            close: 22,<br>
+                          },<br>
+                          [weekdays[4]]: {<br>
+                            open: 11,<br>
+                            close: 23,<br>
+                          },<br>
+                          [weekdays[5] +'-'+ weekdays[6] ]:{<br>
+                            open: 0,<br>
+                            close: 24,<br>
+                          },<br>
+                        };<br><br>
+                        
+
+                        for(const day of weekdays){<br>
+                            const open = restaurant.openingHours[day]?.open;<br>
+                            console.log(` on ${day}, we open at ${open ?? 'not available'}`);<br>
+                          }<br>
+                          
+                        </p>
+                    <h1 class="answer">Output: <br><span class="h1"> on mon, we open at 12<br>
+                        on tue, we open at not available<br>
+                        on wed, we open at not available<br>
+                        on thu, we open at not available<br>
+                        on fri, we open at 11<br>
+                        on sat, we open at not available<br>
+                        on sun, we open at not available</span>
+                      &nbsp; <span class="h1"></span>  </h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+                <h1>lecture</h1>
+                <p>Introduction Loop</p>
+            </div>
+            <div class="col-2">
+                    <p>
+                        </p>
+                    <h1 class="answer">Output: <span class="h1"></span>
+                      &nbsp; <span class="h1"></span>  </h1>
             </div>
         </div>
 

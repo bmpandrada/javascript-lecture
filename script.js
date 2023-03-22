@@ -707,6 +707,38 @@ const restaurant = {
     return console.log(`${restaurant.starterMenu[ing1]} nice ${restaurant.starterMenu[ing2]} nice nice ${restaurant.starterMenu[ing3]}`);
   }
 };
+for(const day of weekdays){
+  const open = restaurant.openingHours[day]?.open;
+  console.log(` on ${day}, we open at ${open ?? 'not available'}`);
+}
 
-console.log(restaurant);
-restaurant.order(1,2,3);
+
+// console.log(restaurant.openingHours.mon?.less || restaurant.openingHours.mon);
+// const detail =[];
+// for(const [i, j] of weekdays.entries()){
+//   detail.push(i + 1, j)
+
+// }
+// console.log(detail);
+
+// console.log(restaurant);
+// restaurant.order(1,2,3);
+
+// const url = 'https://icanhazdadjoke.com/slack';
+// const fetchApi = async () => {
+//   try {
+//     const resp = await fetch(url,{
+//       headers:{
+//         Accept: 'application/json'
+//       }
+//     });
+//     const data = await resp.json();
+//     const joke = data.attachments[0].text;
+//     console.log(joke);
+//   } catch (error) {
+//     console.log(error);
+//   }
+// }
+// fetchApi()
+
+
