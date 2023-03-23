@@ -817,18 +817,48 @@ const restaurant = {
 // console.log(task);
 
 
-const task1 = {
-  task:'code',
-  date:'today',
-  repeat:true
-};
+// const task1 = {
+//   task:'code',
+//   date:'today',
+//   repeat:true
+// };
 
-console.log(task1);
+// console.log(task1);
 
-const task2 = new Map([
-  ['task','code'],
-  ['date','today'],
-  [false, 'start coding']
-]);
+// const task2 = new Map([
+//   ['task','code'],
+//   ['date','today'],
+//   [false, 'start coding']
+// ]);
 
-console.log(task2);
+// console.log(task2);
+
+
+const gameEvents = new Map([
+  [17,'goal'],
+  [36, 'subtitute'],
+  [47, 'goal'],
+  [61, 'yellow card'],
+  [69, 'red card'],
+  [70, 'subtitute'],
+  [72, 'subtitute'],
+  [76, 'goal'],
+  [86, 'goal'],
+  [92, 'yellow card']
+])
+
+
+const events = new Set(gameEvents.values());
+console.log(events);
+
+
+
+
+const data =[];
+if(gameEvents){
+
+  data.push(events)
+}
+
+
+

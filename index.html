@@ -914,9 +914,36 @@ console.log(detail);
 console.log(task2);<br>
                                     </p>
                                     <h1 class="answer">Output: <span class="h1"> use when you simply need to map key values</span>
-                                        &nbsp; <span class="h1"></span> Map(3) {'task' => 'code', 'date' => 'today', false => 'start coding'}</h1>
+                                        &nbsp; <span class="h1"></span> Map(3) {'task' => 'code', 'date' => 'today', false => 'start coding'}</h1><br><br>
             
                     
+                                        <p>Example cases <br><br>
+                                        
+                                            const gameEvents = new Map([<br>
+                                            [17,'goal'],<br>
+                                            [36, 'subtitute'],<br>
+                                            [47, 'goal'],<br>
+                                            [61, 'yellow card'],<br>
+                                            [69, 'red card'],<br>
+                                            [70, 'subtitute'],<br>
+                                            [72, 'subtitute'],<br>
+                                            [76, 'goal'],<br>
+                                            [86, 'goal'],<br>
+                                            [92, 'yellow card']<br>
+                                          ])<br><br>
+                                          
+                                          
+                                          const events = new Set(gameEvents.values());<br>
+                                          console.log(events);<br>
+                                        
+                                        
+                                        </p>
+                                             <h1 class="answer">Output: <span class="h1"> *use new Set to avoid dupli.</span>
+                                                &nbsp; <span class="h1"></span> Set(4) {'goal', 'subtitute', 'yellow card', 'red card'}</h1><br><br>
+        </h1><br><br>
+    
+
+
                         </div>
         </div>
         <div class="row">
