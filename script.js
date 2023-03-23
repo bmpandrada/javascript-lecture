@@ -848,6 +848,9 @@ const gameEvents = new Map([
   [92, 'yellow card']
 ])
 
+
+
+
 //1
 const events = [...new Set(gameEvents.values())];
 console.log(events);
@@ -865,3 +868,8 @@ console.log(time);
 console.log(`an event happend, on average, every ${time / gameEvents.size }`);
 
 
+//4
+for(const [key, value] of gameEvents){
+  const half = key <= 45 ? 'FIRST' : 'SECOND'
+  console.log(`[${half} half], ${key} ${value}`);
+}

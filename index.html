@@ -941,8 +941,6 @@ console.log(task2);<br>
                                         <h1 class="answer">Output: <span class="h1"> *use new Set to avoid dupli.</span>
                                             &nbsp; <span class="h1"></span> Set(4) {'goal', 'subtitute', 'yellow card', 'red card'}</h1><br><br>
     </h1>
-
-                                        
                                            <p>
                                             
                                             gameEvents.delete(64);<br>
@@ -955,16 +953,32 @@ console.log(time);
 
 
 console.log(`an event happend, on average, every ${time / gameEvents.size }`);
-
-
                                            </p> 
 
 
                                              <h1 class="answer">Output: <span class="h1"> 'goal', 'subtitute', 'yellow card', 'red card'<br></span>
                                                 &nbsp; <span class="h1"></span> an event happend, on average, every 9.2</h1><br><br>
-        </h1><br><br>
-    
+        </h1>
+<p>
+    for(const [key, value] of gameEvents){<br>
+        const half = key <= 45 ? 'FIRST' : 'SECOND'<br>
+        console.log(`[${half} half], ${key} ${value}`);<br>
+      }
+</p>
 
+<h1 class="answer">Output: <span class="h1">
+    [FIRST half], 17 goal<br>
+[FIRST half], 36 subtitute<br>
+[SECOND half], 47 goal<br>
+[SECOND half], 61 yellow card<br>
+[SECOND half], 69 red card<br>
+[SECOND half], 70 subtitute<br>
+[SECOND half], 72 subtitute<br>
+[SECOND half], 76 goal<br>
+ [SECOND half], 86 goal<br>
+[SECOND half], 92 yellow card<br>
+    </span>
+    
 
                         </div>
         </div>
