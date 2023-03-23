@@ -874,10 +874,48 @@ console.log(detail);
             </div>
             <div class="col-2">
                     <p>
+                        Array:<br><br>
+                        const task = ['code', 'Eat','code', ];<br>
+
+                        console.log(task);
                         </p>
-                    <h1 class="answer">Output: <span class="h1"></span>
-                      &nbsp; <span class="h1"></span>  </h1>
-            </div>
+                    <h1 class="answer">Output: <span class="h1"> Avoid Duplicate</span>
+                      &nbsp; <span class="h1"></span> (3) ['code', 'Eat', 'code']</h1><br><br>
+                      <p>
+                        Sets Array:<br><br>
+                        const task = new Set(['code', 'Eat','code', ]);<br>
+
+                        console.log(task);
+                        </p>
+                    <h1 class="answer">Output: <span class="h1"> Avoid Duplicate</span>
+                      &nbsp; <span class="h1"></span> Set(2) {'code', 'Eat'} </h1><br><br>
+    
+                        <p>
+                            <p> Object:<br><br>
+                            const task1 = {<br>
+                                task:'code',<br>
+                                date:'today',<br>
+                                repeat:true<br>
+                              };
+                              
+                              console.log(task1);
+                        </p>
+                        <h1 class="answer">Output: <span class="h1"> can convert to map</span>
+                            &nbsp; <span class="h1"></span> {task: 'code', date: 'today', repeat: true}</h1><br><br>
+                                    <p> Maps:<br><br>
+                                        const task2 = new Map([<br>
+  ['task','code'],<br>
+  ['date','today'],<br>
+  [false, 'start coding']<br>
+]);<br>
+
+console.log(task2);<br>
+                                    </p>
+                                    <h1 class="answer">Output: <span class="h1"> use when you simply need to map key values</span>
+                                        &nbsp; <span class="h1"></span> Map(3) {'task' => 'code', 'date' => 'today', false => 'start coding'}</h1>
+            
+                    
+                        </div>
         </div>
         <div class="row">
             <div class="col-1">

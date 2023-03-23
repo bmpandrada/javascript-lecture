@@ -794,13 +794,41 @@ const restaurant = {
   
 };
 
-const rest = new Map();
-rest.set('name', 'classico');
-rest.set(1, 'fire');
-rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])
-.set(true, 'we are open')
-console.log(rest);
+// const rest = new Map();
+// rest.set('name', 'classico');
+// rest.set(1, 'fire');
+// rest.set('categories', ['Italian', 'Pizzeria', 'Vegetarian','organic'])
+// .set(true, 'we are open')
+// console.log(rest);
 
-console.log(rest.get(true));
+// console.log(rest.get(true));
 
 
+// const question = new Map([
+//   [1, 'c'],
+//   [2, 'java'],
+//   [3, 'javascript'],
+  
+// ])
+
+// const task = new Set(['code', 'Eat','code', ]);
+// // const task = ['code', 'Eat','code', ];
+// console.log(task);
+// console.log(task);
+
+
+const task1 = {
+  task:'code',
+  date:'today',
+  repeat:true
+};
+
+console.log(task1);
+
+const task2 = new Map([
+  ['task','code'],
+  ['date','today'],
+  [false, 'start coding']
+]);
+
+console.log(task2);
