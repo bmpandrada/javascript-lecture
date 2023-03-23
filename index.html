@@ -934,12 +934,34 @@ console.log(task2);<br>
                                           
                                           
                                           const events = new Set(gameEvents.values());<br>
-                                          console.log(events);<br>
+                                          console.log(events);
                                         
                                         
                                         </p>
-                                             <h1 class="answer">Output: <span class="h1"> *use new Set to avoid dupli.</span>
-                                                &nbsp; <span class="h1"></span> Set(4) {'goal', 'subtitute', 'yellow card', 'red card'}</h1><br><br>
+                                        <h1 class="answer">Output: <span class="h1"> *use new Set to avoid dupli.</span>
+                                            &nbsp; <span class="h1"></span> Set(4) {'goal', 'subtitute', 'yellow card', 'red card'}</h1><br><br>
+    </h1>
+
+                                        
+                                           <p>
+                                            
+                                            gameEvents.delete(64);<br>
+
+
+pop deleted last element<br><br>
+const time = [...gameEvents.keys()].pop() <br>
+//17, 36, 47, 61, 69, 70, 72, 76, 86, 92<br><br>
+console.log(time);
+
+
+console.log(`an event happend, on average, every ${time / gameEvents.size }`);
+
+
+                                           </p> 
+
+
+                                             <h1 class="answer">Output: <span class="h1"> 'goal', 'subtitute', 'yellow card', 'red card'<br></span>
+                                                &nbsp; <span class="h1"></span> an event happend, on average, every 9.2</h1><br><br>
         </h1><br><br>
     
 

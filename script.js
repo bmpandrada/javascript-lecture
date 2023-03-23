@@ -839,6 +839,7 @@ const gameEvents = new Map([
   [36, 'subtitute'],
   [47, 'goal'],
   [61, 'yellow card'],
+  [64, 'yellow card'],
   [69, 'red card'],
   [70, 'subtitute'],
   [72, 'subtitute'],
@@ -847,18 +848,20 @@ const gameEvents = new Map([
   [92, 'yellow card']
 ])
 
-
-const events = new Set(gameEvents.values());
+//1
+const events = [...new Set(gameEvents.values())];
 console.log(events);
 
+//2
+gameEvents.delete(64);
 
 
+//4 pop deleted last element
+const time = [...gameEvents.keys()].pop() 
+//17, 36, 47, 61, 69, 70, 72, 76, 86, 92
+console.log(time);
 
-const data =[];
-if(gameEvents){
-
-  data.push(events)
-}
-
+//3
+console.log(`an event happend, on average, every ${time / gameEvents.size }`);
 
 
