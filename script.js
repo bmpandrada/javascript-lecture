@@ -3,7 +3,7 @@
 
 const navbar = document.querySelector('.burger');
 const navbarItems = document.querySelector('.mobile');
-const closeLinks = document.querySelectorAll('.mobile h2')
+const closeLinks = document.querySelectorAll('.mobile li')
 
 
 for(let i = 0; i < closeLinks.length; i++){
